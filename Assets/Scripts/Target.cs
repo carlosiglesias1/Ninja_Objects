@@ -35,4 +35,8 @@ public class Target : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    private void OnMouseDown()
+    {
+        Destroy(gameObject);
+    }
 }

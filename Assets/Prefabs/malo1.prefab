@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -2477577951095450712}
   - component: {fileID: 7611525152714107889}
   m_Layer: 0
-  m_Name: Skull_01
+  m_Name: malo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
