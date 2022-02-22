@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public Button restartButton;
     private int score;
     public List<GameObject> targets;
+    public GameObject titleScreen;
     private bool gameOver;
     IEnumerator SpawnTarget()
     {
@@ -26,11 +27,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameOver = false;
+        this.scoreText.gameObject.SetActive(false);
         this.gameOverText.gameObject.SetActive(false);
-        this.restartButton.gameObject.SetActive(false);
-        UpdateScore(0);
-        StartCoroutine(SpawnTarget());
     }
     public void UpdateScore(int scoreToAdd)
     {
@@ -53,5 +51,15 @@ public class GameManager : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void StartGame(int difficulty)
+    {
+        spawnRate /= difficulty;
+        gameOver = false;
+        this.gameOverText.gameObject.SetActive(false);
+        this.restartButton.gameObject.SetActive(false);
+        StartCoroutine(SpawnTarget());
+        UpdateScore(0);
+        titleScreen.gameObject.SetActive(false);
     }
 }
