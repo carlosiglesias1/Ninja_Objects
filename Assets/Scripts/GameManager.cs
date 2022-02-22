@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     {
         this.scoreText.gameObject.SetActive(false);
         this.gameOverText.gameObject.SetActive(false);
+        this.restartButton.gameObject.SetActive(false);
     }
     public void UpdateScore(int scoreToAdd)
     {
@@ -61,5 +62,6 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SpawnTarget());
         UpdateScore(0);
         titleScreen.gameObject.SetActive(false);
+        this.scoreText.gameObject.SetActive(true);
     }
 }
