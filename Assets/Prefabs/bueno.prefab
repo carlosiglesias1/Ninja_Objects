@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2502429529004977117}
   - component: {fileID: 877621055190601998}
   - component: {fileID: 681914006034159087}
-  - component: {fileID: -2670649530023183577}
+  - component: {fileID: -1445195882961316459}
   m_Layer: 0
   m_Name: bueno
   m_TagString: Untagged
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d81d1983b778c4490ab5bedbf7c800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointValue: 5
 --- !u!54 &681914006034159087
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -112,8 +113,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &-2670649530023183577
-MeshCollider:
+--- !u!65 &-1445195882961316459
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -122,7 +123,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: bc0208005b6890d44994050c677eb13f, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.94652724, y: 1.3434764, z: 0.9465271}
+  m_Center: {x: -0.000000044703484, y: 0.6717382, z: 0}
